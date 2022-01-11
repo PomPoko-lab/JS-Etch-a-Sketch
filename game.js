@@ -31,6 +31,11 @@ let size;
 
 button.addEventListener('click', () => {
     size = prompt('What would you like the size to be? ');
+
+    while (size > 100) {
+        size = prompt('Please input a smaller size.');
+    }
+
     resetSquare(sketchGrid);
     addGridSquares(size);
     editGridSize(size);
