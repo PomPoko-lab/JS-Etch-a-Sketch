@@ -48,6 +48,13 @@ div.container-header h1 {
     height: 15%;
     flex: 0 0 1;
     background-color: #3d3d3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    padding: 3px 10px 3px 10px;
 }
 
 .sketch-area {
