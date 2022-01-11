@@ -59,8 +59,16 @@ div.container-header h1 {
 }
 
 .sketch-box {
+    border: 2px solid black;
     height: 470px;
     width: 470px;
     align-self: center;
-    border: 1px solid aquamarine; /* remove */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.sketch-box .square {
+    border: 1px solid black;
+    background-color: white;
 }
