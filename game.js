@@ -1,5 +1,4 @@
 const sketchGrid = document.querySelector('.sketch-box');
-const sketchSquare = document.createElement('div');
 const button = document.querySelector('button');
 
 const createSquare = parent => {
@@ -8,7 +7,7 @@ const createSquare = parent => {
     parent.append(square);
 }
 
-const resetSquare = parent => {
+const resetSquare = () => {
     sketchGrid.innerHTML = '';
 }
 
@@ -28,6 +27,8 @@ const increaseSize = (oldSize, newSize) => {
     editGridSize(newSize);
 }
 
+let size;
+
 button.addEventListener('click', () => {
     size = prompt('What would you like the size to be? ');
     resetSquare(sketchGrid);
@@ -35,4 +36,6 @@ button.addEventListener('click', () => {
     editGridSize(size);
 })
 
-let size;
+sketchGrid.addEventListener('mouseover', e => {
+    e.target.style.backgroundColor = 'black';
+})

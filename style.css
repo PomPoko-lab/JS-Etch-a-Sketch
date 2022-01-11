@@ -2,6 +2,8 @@ body {
     background-color: #30302f;
     display: flex;
     justify-content: center;
+    padding: 0px;
+    margin: 0px;
 }
 
 div.main-container {
@@ -63,6 +65,7 @@ button {
     margin: 0px;
     display: flex;
     justify-content: center;
+    background-color: none !important;
 }
 
 .sketch-box {
@@ -76,6 +79,5 @@ button {
 }
 
 .sketch-box .square {
-    border: 1px solid black;
     background-color: white;
 }
